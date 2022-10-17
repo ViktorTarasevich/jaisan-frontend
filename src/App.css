@@ -1,0 +1,48 @@
+.MuiDataGrid-virtualScroller::-webkit-scrollbar {
+    height: 0px;
+    width: 5px;
+}
+
+/* Track */
+.MuiDataGrid-virtualScroller::-webkit-scrollbar-track {
+    height: 300px;
+
+}
+
+/* Handle */
+.MuiDataGrid-virtualScroller::-webkit-scrollbar-thumb {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background: #8C8C8C;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.Toastify__toast--success {
+    border-radius: 5px !important;
+}
+.Toastify__toast--success::before {
+    position:relative;
+    z-index:100000;
+}
+.Toastify__toast--success::after {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+}
+.Toastify__toast-body{
+    font-size: 18px;
+}
+.Toastify__close-button--light{
+    opacity: 1 !important;
+}
+.fancy-progress-bar {
+    background: #EE7500 !important;
+}
