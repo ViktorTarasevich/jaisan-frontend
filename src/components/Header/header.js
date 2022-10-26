@@ -22,6 +22,7 @@ import {
     HeaderTitleWrap, HeaderUserButton,
     HeaderWrap, SearchButton, SearchInput
 } from "../../styledComponents/header";
+import useDebounce from "../../hooks/useDebounce"
 
 const {
     LANDING,
@@ -32,23 +33,28 @@ const {
 
 export const Header = ({theme}) => {
 
-    const [value, setValue] = useState('');
+    const [query, setQuery] = useState('');
+    const [results, setResults] = useState([])
     const setActive = ({isActive}) => (isActive ? " active" : "");
 
-    const handleSearch = async (event) => {
-        setValue((value) => {
-            value = event.target.value;
-            return value;
-        });
-        console.log(value);
-
-        const res = await axios.post(`${API_BASE_URL}/search`,[value]).catch(e => {
-            console.log(e);
-        });
+    useDebounce(async () => {
+        if(query.trim().length === 0) {
+            return setResults([])
+        }
+        const res = await axios.post(`http://localhost:5000/search`,{
+            query
+        })
         if(res.status === 200) {
+            setResults(res.data)
             console.log('complete')
         }
-    }
+      }, [query], 800);
+
+    const handleSearch = (e) => setQuery(e.target.value);
+    const searchResults = results.map(r => {
+        const { article } = r
+        return <div style={{padding: '10px', marginTop: '5px'}} key={article.id}> {article.name}</div>
+    })
 
     return (
         <HeaderWrap>
@@ -57,18 +63,19 @@ export const Header = ({theme}) => {
                     <LogoIcon color='#EE7500'/>
                 </HeaderLogoLink>
             </HeaderLogo>
-            <HeaderTitleWrap>
-                <HeaderTitle>AutoSet</HeaderTitle>
-                <HeaderTitleDescription>Автозапчасти в Беларуси</HeaderTitleDescription>
-            </HeaderTitleWrap>
-            <HeaderPhoneButton>
-                <PhoneIcon color='#EE7500' size={34}/>
-            </HeaderPhoneButton>
+            {/*<HeaderTitleWrap>*/}
+            {/*    <HeaderTitle>AutoSet</HeaderTitle>*/}
+            {/*    <HeaderTitleDescription>Автозапчасти в Беларуси</HeaderTitleDescription>*/}
+            {/*</HeaderTitleWrap>*/}
+                <a href="tel:+375290000000">
+                    <PhoneIcon color='#EE7500' size={34}/>
+                </a>
             <HeaderSearchWrap>
                 <SearchButton type="button">
                     <SearchIcon color='#EE7500' size={34}/>
                 </SearchButton>
                 <SearchInput type="search" placeholder="Поиск..." name="search" onChange={handleSearch}/>
+                {searchResults.length > 0 ? <div style={{overflow: 'auto', backgroundColor: 'black', color: 'white', display: 'flex', flexDirection: 'column', position: 'absolute', top: '0', left: '40%', height: '400px', width: '500px'}}>{ searchResults }</div> : null }
             </HeaderSearchWrap>
             <HeaderAlertsButton>
                 <BellIcon color='#EE7500' size={34}/>
