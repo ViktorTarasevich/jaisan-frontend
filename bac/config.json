@@ -1,0 +1,143 @@
+[
+	{
+		"attributes": {
+			"struct": [
+				{
+					"type": "alternative",
+					"params": {
+						"boundary": "--ALT--bA6c1D7a9f5B9C36EaC82248455821191650979774"
+					},
+					"disposition": null,
+					"language": null
+				},
+				[
+					{
+						"partID": "1",
+						"type": "text",
+						"subtype": "plain",
+						"params": {
+							"charset": "utf-8"
+						},
+						"id": null,
+						"description": null,
+						"encoding": "BASE64",
+						"size": 30,
+						"lines": 1,
+						"md5": null,
+						"disposition": null,
+						"language": null
+					}
+				],
+				[
+					{
+						"partID": "2",
+						"type": "text",
+						"subtype": "html",
+						"params": {
+							"charset": "utf-8"
+						},
+						"id": null,
+						"description": null,
+						"encoding": "BASE64",
+						"size": 244,
+						"lines": 5,
+						"md5": null,
+						"disposition": null,
+						"language": null
+					}
+				]
+			],
+			"date": "2022-04-26T13:29:39.000Z",
+			"flags": ["\\Seen"],
+			"uid": 78,
+			"modseq": "8852",
+			"x-gm-labels": [],
+			"x-gm-msgid": "1731177772668824939",
+			"x-gm-thrid": "1731177529502605715"
+		},
+		"parts": [
+			{
+				"which": "TEXT",
+				"size": 596,
+				"body": "\r\n----ALT--bA6c1D7a9f5B9C36EaC82248455821191650979774\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: base64\r\n\r\nCsKgCsKgCi0tCkdPT0QgR09PRA==\r\n\r\n----ALT--bA6c1D7a9f5B9C36EaC82248455821191650979774\r\nContent-Type: text/html; charset=utf-8\r\nContent-Transfer-Encoding: base64\r\n\r\nCjxIVE1MPjxCT0RZPjxkaXY+Jm5ic3A7PC9kaXY+PGRpdj4mbmJzcDs8L2Rpdj48ZGl2IGRhdGEt\r\nc2lnbmF0dXJlLXdpZGdldD0iY29udGFpbmVyIj48ZGl2IGRhdGEtc2lnbmF0dXJlLXdpZGdldD0i\r\nY29udGVudCI+PGRpdj4tLTxicj5HT09EIEdPT0Q8L2Rpdj48L2Rpdj48L2Rpdj48L0JPRFk+PC9I\r\nVE1MPgo=\r\n\r\n----ALT--bA6c1D7a9f5B9C36EaC82248455821191650979774--\r\n"
+			},
+			{
+				"which": "HEADER",
+				"size": 5761,
+				"body": {
+					"delivered-to": ["avtodzejsan@gmail.com"],
+					"received": [
+						"by 2002:a05:7022:d72:b0:3e:2772:9f04 with SMTP id eb50csp56230dlb; Tue, 26 Apr 2022 06:29:39 -0700 (PDT)",
+						"from f226.i.mail.ru (f226.i.mail.ru. [45.84.128.106]) by mx.google.com with ESMTPS id t24-20020a19dc18000000b004718e22ee49si14694744lfg.343.2022.04.26.06.29.38 for <avtodzejsan@gmail.com> (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128); Tue, 26 Apr 2022 06:29:39 -0700 (PDT)",
+						"by f226.i.mail.ru with local (envelope-from <stug_kt@mail.ru>) id 1njLG2-0004Mn-VJ for avtodzejsan@gmail.com; Tue, 26 Apr 2022 16:29:35 +0300",
+						"by e.mail.ru with HTTP; Tue, 26 Apr 2022 16:29:34 +0300"
+					],
+					"x-google-smtp-source": [
+						"ABdhPJwSXFw8WJ2UZ81u5jaRgYGhpKkQqmsVT7xn8duGO+E9pUTp00RYfY5dH69EJl7oui9nFryz"
+					],
+					"x-received": [
+						"by 2002:a05:6512:110d:b0:471:c104:d76d with SMTP id l13-20020a056512110d00b00471c104d76dmr16901818lfg.329.1650979779042; Tue, 26 Apr 2022 06:29:39 -0700 (PDT)"
+					],
+					"arc-seal": [
+						"i=1; a=rsa-sha256; t=1650979779; cv=none; d=google.com; s=arc-20160816; b=s1l01ZP3NTKObyFOa8x+qo3o1boyiNeXrLMmzr6kgQkL/Cpv1lSjWtHSxBdsdQoWie JVKd9bdtLqBrWruysMOtiV8NdiVpD4W26/lA72aWj+MjrBmXMQhq1UyJTP+5sru6Ts4m nmCUy8xcFTWx7/qe4xyJmMYc0+GYSl8AwVugzAIqH0vBWrZtq2TNjZ7egC32OMAx4i+L TekF0bS5svIRq+1mOeCaZYPjsin/ayceh9zlWk/Vy8GMaKgk2am/gLRvqtu6wTevZ/19 eoeY7Ka/qxTriurLTyAwOcKvTKbHiaGH/gw+xzA2NSC59dy1mNLtR4RLd/LLufyOAl4X pCBg=="
+					],
+					"arc-message-signature": [
+						"i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816; h=message-id:reply-to:date:mime-version:subject:to:from :dkim-signature; bh=OWmrzdhcE4Kd/ULNrUMWiqcfmA02Cf/rJPosA2HNDHg=; b=n//0RY5DeLWag+z5gBfXiSsfdTC9ViLIY6iDk+alqbdvKN9huiCLZAOGr4VS4mH0XQ d/FdvYOU2D159K9B1shGAEyP5UuJrrote0mnnMRifmmWuFI/zdcTsrfZseu0Qu3vgnoK ugBr2VgLFNJVucftincw/aucd2abeadAtMHmFJdNXm8NgRbb8ij96nX5a7UWOqeoC9fz iSKi5CtvAmM79al+nUA+kT4mVrXhrcTwTUF3NBwjAJZxOOMl8QX0CPJ8WJQXtBZqQw24 ixS0J3AEx4iWDuvOG1efqY9jZAgYBPLUwLpAJQR5ruDw5tNpeRQtMhAt7vDQpWIgxglF EkLA=="
+					],
+					"arc-authentication-results": [
+						"i=1; mx.google.com; dkim=pass header.i=@mail.ru header.s=mail3 header.b=dulFpO9U; spf=pass (google.com: domain of stug_kt@mail.ru designates 45.84.128.106 as permitted sender) smtp.mailfrom=stug_kt@mail.ru; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mail.ru"
+					],
+					"return-path": ["<stug_kt@mail.ru>"],
+					"received-spf": [
+						"pass (google.com: domain of stug_kt@mail.ru designates 45.84.128.106 as permitted sender) client-ip=45.84.128.106;"
+					],
+					"authentication-results": [
+						"mx.google.com; dkim=pass header.i=@mail.ru header.s=mail3 header.b=dulFpO9U; spf=pass (google.com: domain of stug_kt@mail.ru designates 45.84.128.106 as permitted sender) smtp.mailfrom=stug_kt@mail.ru; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mail.ru",
+						"f226.i.mail.ru; auth=pass smtp.auth=stug_kt@mail.ru smtp.mailfrom=stug_kt@mail.ru"
+					],
+					"dkim-signature": [
+						"v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=mail.ru; s=mail3; h=Content-Type:Message-ID:Reply-To:Date:MIME-Version:Subject:To:From:From:Subject:Content-Type:Content-Transfer-Encoding:To:Cc; bh=OWmrzdhcE4Kd/ULNrUMWiqcfmA02Cf/rJPosA2HNDHg=; t=1650979779;x=1651585179; b=dulFpO9UYA6a84TjYbTLt2uI+K/g0AxN/D03/OAiwH8aLieDsv2/kMajocsB3bjU/FThLu/9BB5N/ioTiJsrPqLJZ050AU9GkzikzrjFdVJwtTsB3ZZ+IAlqnKdsO1R1xS92fy0cpInPL48EgblFGWArCLLTTYfisPuwIN+ZDsI=;"
+					],
+					"from": ["GOOD GOOD <stug_kt@mail.ru>"],
+					"to": ["avtodzejsan@gmail.com"],
+					"subject": ["avtodzejsan@gmail.com"],
+					"mime-version": ["1.0"],
+					"x-mailer": ["Mail.Ru Mailer 1.0"],
+					"x-senderfield-remind": ["0"],
+					"date": ["Tue, 26 Apr 2022 16:29:34 +0300"],
+					"reply-to": ["GOOD GOOD <stug_kt@mail.ru>"],
+					"x-priority": ["3 (Normal)"],
+					"message-id": ["<1650979774.627880960@f226.i.mail.ru>"],
+					"content-type": [
+						"multipart/alternative; boundary=\"--ALT--bA6c1D7a9f5B9C36EaC82248455821191650979774\""
+					],
+					"x-7564579a": ["B8F34718100C35BD"],
+					"x-77f55803": [
+						"119C1F4DF6A9251C3284C9906CDFCA0C1EF0D4605CD51ABC2F6AB8C397C8489A8FD872164937FA4C3A22E62F2485EF5497BA8D0F0F125A9CA0972E4B19F3E2B99ECD8102DEE38F98"
+					],
+					"x-7fa49cb5": [
+						"70AAF3C13DB7016878DA827A17800CE72F6C9C10207407E4D82A6BABE6F325AC08BE7437D75B48FABCF491FFA38154B613377AFFFEAFD269176DF2183F8FC7C05644E22E05AA81AEB287FD4696A6DC2FA8DF7F3B2552694A4E2F5AFA99E116B42401471946AA11AFEE3A9D0FB4FE0F99E1AF7543439151758F08D7030A58E5AD1A62830130A00468AEEEE3FBA3A834EE7353EFBB5533756698344F9AFB2E6ECBF782328334D20D7E85230B39070E294E1DF9E95F17B0083B26EA987F6312C9ECCCD848CCB6FE560CF6B57BC7E64490618DEB871D839B73339E8FC8737B5C22498424CA1AAF98A6958941B15DA834481FCF19DD082D7633A0EF3E4896CB9E6436389733CBF5DBD5E9D5E8D9A59859A8B68424CA1AAF98A6958941B15DA834481F9449624AB7ADAF372E808ACE2090B5E14AD6D5ED66289B5259CC434672EE63711DD303D21008E298D5E8D9A59859A8B6B372FE9A2E580EFC725E5C173C3A84C3D5B09BD6CDB7930C35872C767BF85DA2F004C90652538430E4A6367B16DE6309"
+					],
+					"x-8fc586df": ["7088FE8F28191859"],
+					"x-c1de0dab": [
+						"0D63561A33F958A54C0A291E74027D07442001D8FD2C9954CD14946DE844CC4F8E8E86DC7131B365E7726E8460B7C23C"
+					],
+					"x-c8649e89": [
+						"4E36BF7865823D7055A7F0CF078B5EC49A30900B95165D34738A88CA0C70A5589A24EEC63004BF98B240E6BA95C9A5F43DBCB074D450D939232C09B10CBCE4221D7E09C32AA3244CCE7A05A1059D4AE73F8F97A6CE49CC58B4DF56057A86259F3EB3F6AD6EA9203E"
+					],
+					"x-d57d3aed": [
+						"3ZO7eAau8CL7WIMRKs4sN3D3tLDjz0dLbV79QFUyzQ2Ujvy7cMT6pYYqY16iZVKkSc3dCLJ7zSJH7+u4VD18S7Vl4ZUrpaVfd2+vE6kuoey4m4VkSEu530nj6fImhcD4MUrOEAnl0W826KZ9Q+tr5+wYjsrrSY/u8Y3PrTqANeitKFiSd6Yd7yPpbiiZ/d5BsxIjK0jGQgCHUM3Ry2Lt2G3MDkMauH3h0dBdQGj+BB/iPzQYh7XS329fgu+/vnDhi8MWsw+lhauXdm05OiLlRA=="
+					],
+					"x-mailru-mi": ["10000000000000800"],
+					"x-mailru-sender": [
+						"C045D7675C9BE1F57727ECB15E81508442423681068017D40114A2BB13672917FC3348B8F9D4ED422C9E8DCD0620B6E573A3FFD08F3CCA59EB8C63D4695EFEF0EF71F82ED76F23CE29947EA05E681E52B739C135F836119B5465172B17A05380D6ABBC8983DD6D020D4ABDE8C577C2ED"
+					],
+					"x-mras": ["Ok"],
+					"x-spam": ["undefined"],
+					"x-b8c8f729": ["1"]
+				}
+			}
+		],
+		"seqNo": 8
+	}
+]

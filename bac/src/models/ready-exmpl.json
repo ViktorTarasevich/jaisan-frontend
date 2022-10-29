@@ -1,0 +1,68 @@
+{
+    "firsname": "Мэтью",
+    "lastname": "Макконахи",
+    "phone": "+375336666666",
+    "comments": "выгрузка продукта",
+    "product": [
+        {
+            "provider":"Motex",
+            "name":"Пламегаситель универсальный",
+            "brand":"POLMOSTROW",
+            "productArticul":"00.231",
+            "count": 2,
+            "wholesale": 44.09,
+            "purchasePrice": 67.18,
+            "additional_info":[
+                {
+                    "Применимость":"D=90mm, L=330mm, d=50mm",
+                    "На складе":"4"
+                }
+            ]
+            
+        },
+        {
+            "provider":"Motex",
+            "name":"Грунт синтетический белый",
+            "brand":"Maxi Color",
+            "productArticul":"0002MX",
+            "count": 1,
+            "wholesale": 15.29,
+            "purchasePrice": 27.61,
+            "additional_info":[
+                {
+                    "Применимость":"400 мл",
+                    "На складе":"1"
+                },
+            ]   
+        }
+        {
+            "provider":"Motex",
+            "name":"Втулка клапана ГРМ направляющая",
+            "brand":"METELLI",
+            "productArticul":"01-2482",
+            "count": 4,
+            "wholesale": 2.26,
+            "purchasePrice": 3.44,
+            "additional_info":[
+                {
+                    "Применимость":"Opel Astra, Vectra, Zafira 1.4-2.5 93-, Saab (std)",
+                    "На складе":"4"
+                }
+            ]         
+        },
+        {
+            "provider":"Motex",
+            "name":"Втулка клапана ГРМ направляющая",
+            "brand":"METELLI",
+            "productArticul":"01-2488",
+            "count": 1,
+            "wholesale":4.99,
+            "purchasePrice": 9.86,
+            "additional_info":[
+                {
+                    "Применимость":"Audi, VW, Seat, Skoda 96- (std)","На складе":"4"
+                }
+            ],
+        }
+    ]
+}
