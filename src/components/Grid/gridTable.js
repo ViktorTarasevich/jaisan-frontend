@@ -98,7 +98,7 @@ export const GridTable = ({rows, loaded, height}) => {
                         sx={dataGridSx}
                         rows={rows}
                         getRowId={(row) => {
-                            return row.articul;
+                            return row.name;
                         }}
                         columns={tableProductColumns}
                         loading={loaded}

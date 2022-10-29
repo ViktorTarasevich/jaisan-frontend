@@ -31,7 +31,7 @@ flex-direction: row;
 justify-content: flex-start;
 `;
 
-export const FormLogin = ({theme}) => {
+export const FormLogin = ({theme, setIsAuth, setUser}) => {
 
     const SIGN_IN_MODE = 0;
     const SIGN_UP_MODE = 1;
@@ -42,6 +42,8 @@ export const FormLogin = ({theme}) => {
             <Header theme={theme}/>
             <StyledContent>
                     <AuthFormContainer
+                        setIsAuth={setIsAuth}
+                        setUser={setUser}
                         renderHeader={(mode, {activeModeIndex}) => {
                             switch (activeModeIndex) {
                                 case SIGN_IN_MODE:

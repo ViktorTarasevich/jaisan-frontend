@@ -1,12 +1,11 @@
 import { Formik } from "formik";
 
-export const BaseFormContainer = ({ renderForm, formik }) => {
+export const BaseFormContainer = ({ renderForm, formik, onSubmit }) => {
+
 	return (
 		<Formik
 			{...formik}
-			onSubmit={() => {
-				console.log("Submit");
-			}}
+			onSubmit={onSubmit}
 		>
 			{({ values, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
 				<form onSubmit={handleSubmit}>

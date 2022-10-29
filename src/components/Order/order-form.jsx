@@ -10,7 +10,7 @@ import {
 import axios from "axios";
     import {API_BASE_URL} from "../../constants";
 
-export const OrderForm =({data ,productCount = 4, productFullPrice = 100,}) => {
+export const OrderForm =({data ,productCount = 4, productFullPrice = 100,user}) => {
 
     // function pivot(arr) {
     //     var mp = new Map();
@@ -79,6 +79,10 @@ export const OrderForm =({data ,productCount = 4, productFullPrice = 100,}) => {
     return (
         <>
             <FormContainer>
+                {user && <OrderConfirmContainerText>
+                        <OrderConfirmTitle>{user.lastname} {user.name}</OrderConfirmTitle>
+                    </OrderConfirmContainerText>
+                }
                 <OrderConfirmContainerText>
                     <OrderConfirmTitle>Оформление заказа</OrderConfirmTitle>
                     <IconCollapseContainer>

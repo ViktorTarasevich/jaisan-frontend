@@ -8,7 +8,7 @@ const GridWrapper = styled.div`
 flex: 2 100%;
 `;
 
-export const Grid = () => {
+export const Grid = ({ results }) => {
 
     const { data, loaded } = useApi("/get-all", "GET");
     const [tableAvailableHeight, setTableAvailableHeight] = useState();
@@ -25,11 +25,12 @@ export const Grid = () => {
             console.log(tableAvailableHeight);
         }
     }, [data]);
+    const dataMap = results?.length > 0 ? results : data?.length > 0 ? data : []
 
     return (
         <GridWrapper>
             <GridHeader title={'Каталог'} backButton={false} headerRadius={true}/>
-            <GridTable rows={data || []} loaded={!loaded} height={tableAvailableHeight || 542}/>
-        </GridWrapper>
+            <GridTable rows={dataMap} loaded={!loaded} height={tableAvailableHeight || 542}/>
+</GridWrapper>
     );
 };

@@ -26,11 +26,11 @@ const StyledFooter = styled.div`
 
 
 
-export default function HistorySale({theme}) {
+export default function HistorySale({theme, logout}) {
 
     return (
         <CartWrapper>
-            <Header theme={theme}/>
+            <Header theme={theme} logout={logout}/>
             <HistoryTable/>
             <StyledFooter/>
         </CartWrapper>

@@ -30,7 +30,7 @@ const GridWrapper = styled.div`
 `;
 
 
-export default function Cart({theme}) {
+export default function Cart({theme, user, logout}) {
     const {data, loaded} = useApi("/cart", "GET");
     const [tableAvailableHeight, setTableAvailableHeight] = useState();
 
@@ -49,9 +49,9 @@ export default function Cart({theme}) {
 
     return (
         <CartWrapper>
-            <Header theme={theme}/>
+            <Header theme={theme} logout={logout}/>
             <ContentWrap>
-                <OrderForm data={data || []}/>
+                <OrderForm data={data || []} user={user}/>
                 <GridWrapper>
                     <GridCart rows={data || []} loaded={!loaded} height={tableAvailableHeight || 760}/>
                 </GridWrapper>

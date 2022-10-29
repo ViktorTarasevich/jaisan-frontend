@@ -12,7 +12,7 @@ background: ${({theme}) => theme.options};
 `;
 
 const JsonParse = (product) => {
-    const meetup = JSON.parse(product.additional_info);
+    const meetup = product.additional_info;
     Object.defineProperty( meetup, "use", {
         value: meetup.Применимость,
     });
@@ -60,18 +60,18 @@ function  ProductTable ({product, tabIndex}) {
                 setRows(() => createDescriptionRows(product));
                 setColumns(descriptionColumn);
                 break;
-            case 1: 
+            case 1:
                 setRows(() => createUsabilityRows(product));
                 setColumns(usabilityColumn);
                 break;
-            case 2: 
+            case 2:
                 setRows(() => createAnalogsRows(product));
                 setColumns(analogColumn);
                 break;
             default:
                 setRows(() => createDescriptionRows(product));
                 setColumns(descriptionColumn);
-                break;    
+                break;
         }
 
     }, [tabIndex, product])

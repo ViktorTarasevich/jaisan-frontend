@@ -13,6 +13,8 @@ export const AuthFormContainer = ({
 	renderFooter,
 	inputComponent,
 	buttonComponent,
+	setIsAuth,
+									  setUser
 }) => {
 
 	const modes = ['Авторизация', 'Регистрация', 'Восстановление пароля'];
@@ -25,6 +27,8 @@ export const AuthFormContainer = ({
 		const props = {
 			inputComponent,
 			buttonComponent,
+			setIsAuth,
+			setUser
 		};
 		switch (activeModeIndex) {
 			case SIGN_IN_MODE:
@@ -39,7 +43,7 @@ export const AuthFormContainer = ({
 	};
 
 	return (
-		<StyledFormContainer>
+		<StyledFormContainer set>
 			{renderHeader(modes[activeModeIndex], {activeModeIndex})}
 			{renderForm()}
 			{renderFooter({activeModeIndex, setSignUpMode, setRestoreMode, setSignInMode})}
